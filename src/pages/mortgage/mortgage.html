@@ -1,0 +1,45 @@
+<!--
+  Generated template for the MortgagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Mortgage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div id ="container">
+  <ion-list >
+
+    <ion-item id="Box">
+      <ion-label stacked >Mortgage amount</ion-label>
+      <ion-input type="number" [value]="mortgageAmount" [(ngModel)]="mortgageAmount"></ion-input>
+    </ion-item>
+    
+    <ion-item id="Box">
+      <ion-label stacked>Interest rate</ion-label>
+      <ion-input type="number" [value]="interest" [(ngModel)]="interest" ></ion-input>
+    </ion-item>
+    
+    <ion-item id="Box">
+      <ion-label stacked>Monthly payment</ion-label>
+      <ion-input type="number" [value]="payment" [(ngModel)]="payment" ></ion-input>
+    </ion-item>
+    
+  
+    </ion-list>
+  </div>
+    
+<div id="center">
+  <button ion-button outline (click)="clicked()">Calculate</button>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "Iloan",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
